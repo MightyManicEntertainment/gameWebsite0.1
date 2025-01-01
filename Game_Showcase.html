@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Neue', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff8a65;
+            padding: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+            color: #ffeb3b;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #ff8a65, #ff6f61);
+            color: white;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: popUp 1s;
+        }
+        @keyframes popUp {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff6f61;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to [Game Name]</h1>
+        <p>An epic adventure awaits!</p>
+    </header>
+    <nav>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="story" class="section">
+        <h2>The Story</h2>
+        <p>[Game Name] takes you on an incredible journey through [setting or theme]. Expect thrilling adventures, unforgettable characters, and a story that will captivate your imagination!</p>
+    </section>
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Gameplay Screenshot 1">
+            <img src="image2.jpg" alt="Gameplay Screenshot 2">
+            <img src="image3.jpg" alt="Gameplay Screenshot 3">
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@gamename.com">contact@gamename.com</a></p>
+        <p>Follow us on social media for updates!</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 [Game Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
